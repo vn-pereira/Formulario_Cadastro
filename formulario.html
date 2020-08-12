@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Formulário Cadastral</title>
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style/formulario.css">
+
+    <script defer src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script defer src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    
+    <script defer src="src\Model\modelCep.js"></script>
+    <script defer src="src\View\viewCep.js"></script>
+    <script defer src="src\Controller\controllerCep.js"></script>
+    <script defer src="helper.js"></script>
+</head>
+
+    <body>
+        <main>
+            <form>
+                <div class="container"> <!--input-->
+                  
+                        <div class="form-row">
+                          <div class="form-group col-md-12">
+                                <label for="Nome">Nome</label>
+                                <input type="text" id="inputNome" class="form-control" placeholder="Tony Stark Junior">
+                          </div>                      
+                     
+                            <div class="form-group col-md-6">
+                                <label for="inputEmail4">Email</label>
+                                <input type="email" class="form-control" id="inputEmail4" placeholder="ironman@exemplo.com">
+                            </div>
+
+                            <div class="form-group col-md-6">
+                                <label for="inputPassword4">Senha</label>
+                                <input type="password" class="form-control" id="inputPassword4" placeholder="123456">
+                            </div>
+                        </div>
+                        
+                        <div class="form-row">
+                            <div class="form-group col-md-2">
+                                <label for="inputAddress">Cep</label>
+                                <input type="text" id="inputCep" class="form-control" id="inputAddress" placeholder="00.000-000">
+                            </div>
+
+                            <div class="form-group col-md-5">
+                                <label for="inputState">Estado</label>
+                                <input type="text" id="inputEstado" class="form-control" id="inputState">
+                            </div>
+
+                            <div class="form-group col-md-5">
+                                <label for="inputCity">Cidade</label>
+                                <input type="text" id="inputCidade" class="form-control" id="inputCity">
+                            </div>                 
+                            
+                            <div class="form-group col-md-6">
+                                <label for="inputAddress2">Endereço</label>
+                                <input type="text" id="inputEndereco" class="form-control" id="inputAddress2" placeholder="Casa, apto, avenida">
+                            </div>
+
+                            <div class="form-group col-md-3">
+                                <label for="inputZip">Número</label>
+                                <input type="text" class="form-control" id="inputZip">
+                            </div>
+                            
+                            <div class="form-group col-md-3">
+                                    <label for="inputZip">Bairro</label>
+                                    <input type="text" id="inputBairro" class="form-control" id="inputZip">
+                            </div>
+                            </div>
+                         
+                            <div class="form-group">
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">Eu aceito os termos de uso</label> 
+                                </div>
+                            </div>
+                        </div>
+
+                <div class="row  justify-content-center">   <!--botão-->
+                    <div class="botao col-md-4">
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">Enviar</button>
+                    </div>
+                </div>
+            </form>
+        </main>
+
+    </body>
+</html>
